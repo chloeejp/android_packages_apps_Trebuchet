@@ -60,7 +60,7 @@
     <!-- App suggestions -->
     <string name="pref_suggestions_title">Suggestions</string>
     <string name="pref_suggestions_summary">For app drawer &amp; home screen suggestions</string>
-    <!-- DT2W -->
+    <!-- DT2L -->
     <string name="double_tap_to_lock_title">Double tap to lock</string>
     <string name="double_tap_to_lock_summary">Double tap on the home screen to lock the device</string>
     <string name="double_tap_to_lock_service_description">Allows Trebuchet to lock the screen when you double tap the home screen</string>

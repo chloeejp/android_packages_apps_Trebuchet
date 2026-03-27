@@ -1,0 +1,8 @@
+<!-- res/xml/double_tap_lock_accessibility_service.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityFlags="flagDefault"
+    android:accessibilityEventTypes="typeNone"
+    android:canPerformGestures="false"
+    android:description="@string/double_tap_to_lock_service_description" />

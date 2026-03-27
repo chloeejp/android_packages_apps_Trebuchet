@@ -133,6 +133,7 @@ import com.android.launcher3.widget.WidgetManagerHelper;
 import com.android.launcher3.widget.util.WidgetSizes;
 import com.android.systemui.plugins.shared.LauncherOverlayManager.LauncherOverlayCallbacks;
 import com.android.systemui.plugins.shared.LauncherOverlayManager.LauncherOverlayTouchProxy;
+import com.android.launcher3.lineage.DoubleTapToLockTouchListener;
 
 import com.google.android.msdl.data.model.MSDLToken;
 
@@ -337,6 +338,12 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
         setOnTouchListener(new WorkspaceTouchListener(mLauncher, this));
         mStatsLogManager = StatsLogManager.newInstance(context);
         mMSDLPlayerWrapper = MSDLPlayerWrapper.INSTANCE.get(context);
+    }
+
+    @Override
+    protected void onFinishInflate() {
+        super.onFinishInflate();
+        setOnTouchListener(new DoubleTapToLockTouchListener(getContext()));
     }
 
     @Override
